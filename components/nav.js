@@ -6,7 +6,7 @@ export default function Nav() {
     <div
       style={{
         padding: "20px",
-        height: "6vh",
+        height: "7vh",
         borderBottom: "1px solid #edf2f7",
         display: "flex",
         justifyContent: "start",
@@ -15,24 +15,27 @@ export default function Nav() {
       }}
     >
       <Link href="/">
-        <a className="navItem">
+        <a className="navItem" style={{ fontSize: "20px" }}>
           <strong>Course Rep</strong>
         </a>
       </Link>
-      <div style={{ marginLeft: "auto" }}>
+      <input
+        className="search-box"
+        type="text"
+        name=""
+        id=""
+        placeholder="Search for documents"
+      />
+      <div>
         <Link href="/">
           <a className="navItem">Home</a>
         </Link>
-        <Link href="/uploader">
+        <Link href="/upload">
           <a className="navItem">Upload</a>
         </Link>
-        <input
-          className="search-box"
-          type="text"
-          name=""
-          id=""
-          placeholder="Search documents"
-        />
+        <Link href="/login">
+          <a className="navItem">Login</a>
+        </Link>
       </div>
     </div>
   );
